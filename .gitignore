@@ -3,4 +3,5 @@
 /.bundle
 /vendor
 /Gemfile.lock
-/db/*.sqlite3
+/db/*.sqlite
+/db/raw/*

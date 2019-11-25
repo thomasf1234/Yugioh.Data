@@ -16,12 +16,12 @@ module YugiohData
           set_columns = set_row.xpath('.//td')
 
           card_number = set_columns[1].text.strip 
-          product_name = set_columns[2].text.strip.upcase
+          set_name = set_columns[2].text.strip.upcase
           rarity_img = set_columns.last.xpath('.//img').first
 
           rarity = rarity_img.nil? ? "Common" : rarity_img.attribute('alt').value.strip
 
-          set = { 'CardNumber' => card_number,  'ProductName' => product_name, 'Rarity' => rarity }
+          set = { 'SetCode' => card_number,  'SetName' => set_name, 'RarityName' => rarity }
           @sets << set
         end
       end

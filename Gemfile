@@ -6,4 +6,4 @@ gem 'activerecord'
 gem 'sqlite3'
 gem 'pry'
 gem 'selenium-webdriver'
-
+gem 'rmagick'

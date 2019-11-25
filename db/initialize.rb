@@ -1,4 +1,4 @@
-db_name = "Yugioh.sqlite3"
+db_name = "Yugioh.sqlite"
 ActiveRecord::Base.logger = Logger.new(File.open("log/#{db_name}.log", 'w+'))
 
 ActiveRecord::Base.establish_connection(
